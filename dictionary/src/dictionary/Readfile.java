@@ -9,9 +9,9 @@ import java.util.HashMap;
 
 public class Readfile {
 
-	File file = new File("dictionary.txt");
+
 	private static String hold;
-	private static String[] stringArray = new String[500];
+	private static String[] stringArray = new String[3000];
 	private static String other = null;
 	private static HashMap<String, String> diction = new HashMap<String, String>();
 
