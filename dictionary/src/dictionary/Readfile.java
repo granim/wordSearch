@@ -47,11 +47,9 @@ public class Readfile {
 			}
 
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Sorry could not find the proper file " + file);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println("Sorry there was a problem with the program ");
 		}
 
 	}
