@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Application {
 
 	public static void main(String[] args) {
-		File file = new File("dictionary.txt");
+		File file = new File("dictionaryTwo.txt");
 		// creates and populates the hashMap
 		Readfile.createMap(file);
 		// create a populated hashmap

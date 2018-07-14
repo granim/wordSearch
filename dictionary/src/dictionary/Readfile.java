@@ -11,8 +11,8 @@ public class Readfile {
 
 
 	private static String hold;
-	private static String[] stringArray = new String[3000];
-	private static String other = null;
+	private static String[] stringArray = new String[1];
+	
 	private static HashMap<String, String> diction = new HashMap<String, String>();
 
 	public HashMap<String, String> getDiction() {
@@ -37,8 +37,7 @@ public class Readfile {
 			while (hold != null) {
 
 				if (bufferedReader.readLine() != "") {
-					other = hold.substring(0);
-					stringArray = other.split(" ");
+					stringArray = hold.split(" ");
 					diction.put(stringArray[0].toLowerCase(), hold);
 					hold = bufferedReader.readLine();
 
