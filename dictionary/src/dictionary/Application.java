@@ -12,10 +12,11 @@ public class Application {
 		// create a populated hashmap
 		Readfile newRead = new Readfile();
 		HashMap<String, String> useDiction = newRead.getDiction();
-
+		
 		System.out.println("Enter a word: " + " Or enter exit to exit the program");
 		SearchWord.findWord(useDiction);
-
+		
+		
 	}
 
 }
