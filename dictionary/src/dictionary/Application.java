@@ -2,6 +2,8 @@ package dictionary;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.List;
+
 
 public class Application {
 
@@ -11,8 +13,8 @@ public class Application {
 		Readfile.createMap(file);
 		// create a populated hashmap
 		Readfile newRead = new Readfile();
-		HashMap<String, String> useDiction = newRead.getDiction();
-		
+		HashMap<String, List<String>> useDiction = newRead.getDiction();
+	
 		System.out.println("Enter a word: " + " Or enter exit to exit the program");
 		SearchWord.findWord(useDiction);
 		
