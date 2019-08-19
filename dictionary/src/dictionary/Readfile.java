@@ -41,15 +41,14 @@ public class Readfile {
 
 				if (bufferedReader.readLine() != "") {
 					stringArray = hold.split(" ");
-						if( ! diction.containsKey(stringArray[0].toLowerCase())) {
-							diction.put(stringArray[0].toLowerCase(), new ArrayList<String>());
-						}
-			//		if( diction.containsKey(stringArray[0].toLowerCase())) {
-						diction.get(stringArray[0]).add(hold);
-				//	}
-							hold = bufferedReader.readLine();
-						
-					
+					diction.put(stringArray[0].toLowerCase(), hold);
+
+					if(diction.containsKey(stringArray[0])){
+						dictionTwo.put(stringArray[0], new ArrayList<String>());
+						dictionTwo.get(stringArray[0]).add(hold);
+					}
+					hold = bufferedReader.readLine();
+
 				}
 			
 			}
